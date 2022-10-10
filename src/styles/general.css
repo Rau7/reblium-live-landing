@@ -1,0 +1,103 @@
+/* HEADER */
+
+header {
+  position: absolute;
+  top: 4rem;
+  left: 6rem;
+}
+
+.reblium-logo-area img {
+  width: 287px;
+  height: 35px;
+}
+
+/* MAIN SECTION */
+
+.main-section-1 {
+  padding: 0 0 0 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1.75fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.writing-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.writing-area h1 {
+  font-size: 5.4rem;
+  font-weight: 700;
+}
+
+.writing-area p {
+  font-size: 3.6rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  padding-right: 16rem;
+}
+
+.writing-button-area {
+  margin-top: 5rem;
+}
+
+.waitlist-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background: linear-gradient(
+    93.72deg,
+    #56349d 3.52%,
+    #4c218b 44.73%,
+    #07051a 97.49%
+  );
+  border-radius: 25px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+  transform: all 0.35s;
+}
+
+.waitlist-btn:hover {
+  background: linear-gradient(
+    93.72deg,
+    #07051a 3.52%,
+    #56349d 44.73%,
+    #4c218b 97.49%
+  );
+}
+
+/* MAIN IMAGE SECTION */
+
+.image-section {
+  background-image: url("../images/background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section-header,
+.image-section-image {
+  margin-left: 20rem;
+}
+
+.image-section-header h3 {
+  color: white;
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.image-section-image {
+  margin-top: 5rem;
+}
+
+.image-section-image img {
+  height: 710px;
+}
