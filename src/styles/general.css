@@ -116,3 +116,9 @@ header {
   border-radius: 50%;
   border: 10px solid rgba(255, 255, 255, 0.1);
 }
+
+.single-card {
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+}
