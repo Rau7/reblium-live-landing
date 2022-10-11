@@ -1,6 +1,16 @@
 import reblogo from "../images/rebliumlogo.webp";
 import first from "../images/first.webp";
+import second from "../images/second.webp";
+import lastFirst from "../images/lastFirst.webp";
+import lastSecond from "../images/lastSecond.webp";
+import lastThird from "../images/lastThird.webp";
+import lastFour from "../images/lastFour.webp";
 import { useEffect, useState } from "react";
+import AwesomeSlider from "react-awesome-slider";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
+import "react-awesome-slider/dist/styles.css";
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,17 +54,76 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="image-section">
-          <div className="image-section-header">
-            <h3>
-              3D face scan as a<br />
-              proof-of-identity
-            </h3>
+        <AutoplaySlider
+          play={true}
+          bullets={false}
+          organicArrows={false}
+          infinite={true}
+          interval={6500}
+        >
+          <div className="image-section">
+            <div className="image-section-header">
+              <h3>
+                3D face scan as a<br />
+                proof-of-identity
+              </h3>
+            </div>
+            <div className="image-section-image">
+              <img
+                src={first}
+                className="first-image"
+                alt="reblium-face-scan"
+              />
+            </div>
           </div>
-          <div className="image-section-image">
-            <img src={first} alt="reblium-face-scan" />
+          <div className="image-section">
+            <div className="image-section-header">
+              <h3>
+                Real-time and high-fidelity
+                <br />
+                avatar creator streamed to you
+              </h3>
+            </div>
+            <div className="image-section-image">
+              <img
+                src={second}
+                className="second-image"
+                alt="reblium-face-scan"
+              />
+            </div>
           </div>
-        </div>
+          <div className="image-section">
+            <div className="image-section-header">
+              <h3>
+                Mint your avatar as a
+                <br />
+                dynamic & soulband NFT
+              </h3>
+            </div>
+            <div className="image-section-grid">
+              <img
+                src={lastFirst}
+                className="grid-image"
+                alt="reblium-face-scan"
+              />
+              <img
+                src={lastSecond}
+                className="grid-image"
+                alt="reblium-face-scan"
+              />
+              <img
+                src={lastThird}
+                className="grid-image"
+                alt="reblium-face-scan"
+              />
+              <img
+                src={lastFour}
+                className="grid-image"
+                alt="reblium-face-scan"
+              />
+            </div>
+          </div>
+        </AutoplaySlider>
       </section>
     </>
   );

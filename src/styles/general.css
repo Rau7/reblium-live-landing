@@ -16,7 +16,7 @@ header {
 .main-section-1 {
   padding: 0 0 0 6rem;
   display: grid;
-  grid-template-columns: 1fr 1.75fr;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
   width: 100%;
 }
@@ -36,7 +36,7 @@ header {
   font-size: 3.6rem;
   font-weight: 400;
   margin-top: 2rem;
-  padding-right: 16rem;
+  padding-right: 2.5rem;
 }
 
 .writing-button-area {
@@ -81,23 +81,38 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.image-section-header,
-.image-section-image {
-  margin-left: 20rem;
+  width: 100%;
 }
 
 .image-section-header h3 {
   color: white;
   font-size: 3.8rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .image-section-image {
   margin-top: 5rem;
 }
 
-.image-section-image img {
+.image-section-image .first-image {
   height: 710px;
+}
+
+.image-section-image .second-image {
+  height: 450px;
+}
+
+.image-section-grid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.grid-image {
+  height: 275px;
+  width: 275px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.1);
 }
