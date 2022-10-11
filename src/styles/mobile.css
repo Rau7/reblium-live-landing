@@ -1,0 +1,68 @@
+@media screen and (max-width: 960px) {
+  .main-section-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .writing-area p {
+    padding-right: 0rem;
+  }
+  .writing-section {
+    padding: 0 0 2rem 2rem;
+  }
+  header {
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+  }
+  .image-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .image-section-grid {
+    gap: 2rem;
+  }
+
+  .grid-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+  }
+  .image-section-image video {
+    height: 175px;
+    border-radius: 25px;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+  }
+  .image-section-header h3 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 116%;
+  }
+  .writing-area h1 {
+    font-size: 4rem;
+  }
+  .writing-area p {
+    font-size: 2.8rem;
+    line-height: 116%;
+  }
+  .waitlist-btn {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-section-grid {
+    gap: 1rem;
+  }
+
+  .grid-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+  }
+}

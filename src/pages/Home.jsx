@@ -1,6 +1,7 @@
 import reblogo from "../images/rebliumlogo.webp";
 import first from "../images/first.webp";
 import second from "../images/second.webp";
+import secondVid from "../images/vid.mp4";
 import lastFirst from "../images/lastFirst.webp";
 import lastSecond from "../images/lastSecond.webp";
 import lastThird from "../images/lastThird.webp";
@@ -35,7 +36,7 @@ function Home() {
       } else if (cont[2]) {
         setCont([true, false, false]);
       }
-    }, 5000);
+    }, 5150);
   }, [cont]);
 
   return isLoading ? (
@@ -87,11 +88,9 @@ function Home() {
             </h3>
           </div>
           <div className="image-section-image">
-            <img
-              src={second}
-              className="second-image"
-              alt="reblium-face-scan"
-            />
+            <video autoPlay muted loop>
+              <source src={secondVid} type="video/mp4" />
+            </video>
           </div>
         </div>
         <div className={`image-section ${cont[2] ? "" : "d-none"}`}>
