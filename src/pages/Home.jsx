@@ -14,6 +14,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const [cont, setCont] = useState([true, false, false]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -24,6 +25,18 @@ function Home() {
       setIsLoading(false);
     };
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (cont[0]) {
+        setCont([false, true, false]);
+      } else if (cont[1]) {
+        setCont([false, false, true]);
+      } else if (cont[2]) {
+        setCont([true, false, false]);
+      }
+    }, 5000);
+  }, [cont]);
 
   return isLoading ? (
     <div className="spinner-container">
@@ -54,76 +67,122 @@ function Home() {
             </div>
           </div>
         </div>
-        <AutoplaySlider
-          play={true}
-          bullets={false}
-          organicArrows={false}
-          infinite={true}
-          interval={6500}
-        >
-          <div className="image-section">
-            <div className="image-section-header">
-              <h3>
-                3D face scan as a<br />
-                proof-of-identity
-              </h3>
-            </div>
-            <div className="image-section-image">
-              <img
-                src={first}
-                className="first-image"
-                alt="reblium-face-scan"
-              />
-            </div>
+        <div className={`image-section ${cont[0] ? "" : "d-none"}`}>
+          <div className="image-section-header">
+            <h3>
+              3D face scan as a<br />
+              proof-of-identity
+            </h3>
           </div>
-          <div className="image-section">
-            <div className="image-section-header">
-              <h3>
-                Real-time and high-fidelity
-                <br />
-                avatar creator streamed to you
-              </h3>
-            </div>
-            <div className="image-section-image">
-              <img
-                src={second}
-                className="second-image"
-                alt="reblium-face-scan"
-              />
-            </div>
+          <div className="image-section-image">
+            <img src={first} className="first-image" alt="reblium-face-scan" />
           </div>
-          <div className="image-section">
-            <div className="image-section-header">
-              <h3>
-                Mint your avatar as a
-                <br />
-                dynamic & soulband NFT
-              </h3>
-            </div>
-            <div className="image-section-grid">
-              <img
-                src={lastFirst}
-                className="grid-image"
-                alt="reblium-face-scan"
-              />
-              <img
-                src={lastSecond}
-                className="grid-image"
-                alt="reblium-face-scan"
-              />
-              <img
-                src={lastThird}
-                className="grid-image"
-                alt="reblium-face-scan"
-              />
-              <img
-                src={lastFour}
-                className="grid-image"
-                alt="reblium-face-scan"
-              />
-            </div>
+        </div>
+        <div className={`image-section ${cont[1] ? "" : "d-none"}`}>
+          <div className="image-section-header">
+            <h3>
+              Real-time and high-fidelity
+              <br />
+              avatar creator streamed to you
+            </h3>
           </div>
-        </AutoplaySlider>
+          <div className="image-section-image">
+            <img
+              src={second}
+              className="second-image"
+              alt="reblium-face-scan"
+            />
+          </div>
+        </div>
+        <div className={`image-section ${cont[2] ? "" : "d-none"}`}>
+          <div className="image-section-header">
+            <h3>
+              Mint your avatar as a
+              <br />
+              dynamic & soulband NFT
+            </h3>
+          </div>
+          <div className="image-section-grid">
+            <img
+              src={lastFirst}
+              className="grid-image"
+              alt="reblium-face-scan"
+            />
+            <img
+              src={lastSecond}
+              className="grid-image"
+              alt="reblium-face-scan"
+            />
+            <img
+              src={lastThird}
+              className="grid-image"
+              alt="reblium-face-scan"
+            />
+            <img
+              src={lastFour}
+              className="grid-image"
+              alt="reblium-face-scan"
+            />
+          </div>
+        </div>
+        {/* <div className="image-section">
+          <div className="image-section-header">
+            <h3>
+              3D face scan as a<br />
+              proof-of-identity
+            </h3>
+          </div>
+          <div className="image-section-image">
+            <img src={first} className="first-image" alt="reblium-face-scan" />
+          </div>
+        </div> */}
+        {/* <div className="image-section">
+          <div className="image-section-header">
+            <h3>
+              Real-time and high-fidelity
+              <br />
+              avatar creator streamed to you
+            </h3>
+          </div>
+          <div className="image-section-image">
+            <img
+              src={second}
+              className="second-image"
+              alt="reblium-face-scan"
+            />
+          </div>
+        </div>
+        <div className="image-section">
+          <div className="image-section-header">
+            <h3>
+              Mint your avatar as a
+              <br />
+              dynamic & soulband NFT
+            </h3>
+          </div>
+          <div className="image-section-grid">
+            <img
+              src={lastFirst}
+              className="grid-image"
+              alt="reblium-face-scan"
+            />
+            <img
+              src={lastSecond}
+              className="grid-image"
+              alt="reblium-face-scan"
+            />
+            <img
+              src={lastThird}
+              className="grid-image"
+              alt="reblium-face-scan"
+            />
+            <img
+              src={lastFour}
+              className="grid-image"
+              alt="reblium-face-scan"
+            />
+          </div>
+        </div> */}
       </section>
     </>
   );

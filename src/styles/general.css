@@ -7,14 +7,13 @@ header {
 }
 
 .reblium-logo-area img {
-  width: 287px;
-  height: 35px;
+  width: 200px;
+  height: 25px;
 }
 
 /* MAIN SECTION */
 
 .main-section-1 {
-  padding: 0 0 0 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -22,21 +21,29 @@ header {
 }
 
 .writing-section {
+  padding: 0 0 0 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .writing-area h1 {
-  font-size: 5.4rem;
-  font-weight: 700;
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.writing-area br {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: -2.75rem;
 }
 
 .writing-area p {
   font-size: 3.6rem;
   font-weight: 400;
   margin-top: 2rem;
-  padding-right: 2.5rem;
+  padding-right: 15rem;
+  line-height: 116%;
 }
 
 .writing-button-area {
@@ -53,19 +60,19 @@ header {
     #4c218b 44.73%,
     #07051a 97.49%
   );
-  border-radius: 25px;
-  font-size: 1.8rem;
+  border-radius: 50px;
+  font-size: 2.6rem;
   font-weight: 700;
-  padding: 1.5rem 3rem;
+  padding: 2.5rem 2.5rem;
   transform: all 0.35s;
 }
 
 .waitlist-btn:hover {
   background: linear-gradient(
     93.72deg,
-    #07051a 3.52%,
-    #56349d 44.73%,
-    #4c218b 97.49%
+    rgba(86, 52, 157, 0.9) 3.52%,
+    rgba(76, 33, 139, 0.9) 44.73%,
+    rgba(7, 5, 26, 0.9) 97.49%
   );
 }
 
@@ -86,9 +93,10 @@ header {
 
 .image-section-header h3 {
   color: white;
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
+  line-height: 116%;
 }
 
 .image-section-image {
@@ -96,7 +104,7 @@ header {
 }
 
 .image-section-image .first-image {
-  height: 710px;
+  height: 600px;
 }
 
 .image-section-image .second-image {
@@ -107,18 +115,22 @@ header {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  gap: 5rem;
 }
 
 .grid-image {
-  height: 275px;
-  width: 275px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
-  border: 10px solid rgba(255, 255, 255, 0.1);
+  border: 20px solid rgba(255, 255, 255, 0.1);
 }
 
 .single-card {
   height: 100vh;
   width: 100%;
   background-color: transparent;
+}
+
+.d-none {
+  display: none;
 }
