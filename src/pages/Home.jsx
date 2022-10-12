@@ -82,7 +82,9 @@ function Home() {
         <div className={`image-section ${cont[1] ? "" : "d-none"}`}>
           <div className="image-section-header">
             <h3>
-              Real-time and high-fidelity
+              Real-time and
+              <br />
+              high-fidelity
               <br />
               avatar creator streamed to you
             </h3>
@@ -124,64 +126,6 @@ function Home() {
             />
           </div>
         </div>
-        {/* <div className="image-section">
-          <div className="image-section-header">
-            <h3>
-              3D face scan as a<br />
-              proof-of-identity
-            </h3>
-          </div>
-          <div className="image-section-image">
-            <img src={first} className="first-image" alt="reblium-face-scan" />
-          </div>
-        </div> */}
-        {/* <div className="image-section">
-          <div className="image-section-header">
-            <h3>
-              Real-time and high-fidelity
-              <br />
-              avatar creator streamed to you
-            </h3>
-          </div>
-          <div className="image-section-image">
-            <img
-              src={second}
-              className="second-image"
-              alt="reblium-face-scan"
-            />
-          </div>
-        </div>
-        <div className="image-section">
-          <div className="image-section-header">
-            <h3>
-              Mint your avatar as a
-              <br />
-              dynamic & soulband NFT
-            </h3>
-          </div>
-          <div className="image-section-grid">
-            <img
-              src={lastFirst}
-              className="grid-image"
-              alt="reblium-face-scan"
-            />
-            <img
-              src={lastSecond}
-              className="grid-image"
-              alt="reblium-face-scan"
-            />
-            <img
-              src={lastThird}
-              className="grid-image"
-              alt="reblium-face-scan"
-            />
-            <img
-              src={lastFour}
-              className="grid-image"
-              alt="reblium-face-scan"
-            />
-          </div>
-        </div> */}
       </section>
     </>
   );

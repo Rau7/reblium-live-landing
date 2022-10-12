@@ -7,8 +7,8 @@ header {
 }
 
 .reblium-logo-area img {
-  width: 200px;
-  height: 25px;
+  width: 286.09px;
+  height: 35px;
 }
 
 /* MAIN SECTION */
@@ -40,7 +40,7 @@ header {
 }
 
 .writing-area p {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
   font-weight: 400;
   margin-top: 2rem;
   padding-right: 15rem;
@@ -62,9 +62,9 @@ header {
     #07051a 97.49%
   );
   border-radius: 50px;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  padding: 2.5rem 2.5rem;
+  padding: 2rem 2.5rem;
   transition: all 0.35s;
 }
 
@@ -122,10 +122,10 @@ header {
 }
 
 .grid-image {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
-  border: 20px solid rgba(255, 255, 255, 0.1);
+  border: 15px solid rgba(255, 255, 255, 0.1);
 }
 
 .single-card {

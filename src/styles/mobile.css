@@ -17,8 +17,8 @@
     left: 2rem;
   }
   .image-section {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .image-section-grid {
     gap: 2rem;
@@ -54,15 +54,26 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .image-section-image .first-image {
+    height: 400px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .image-section-grid {
     gap: 1rem;
   }
 
   .grid-image {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .reblium-logo-area img {
+    width: 200px;
+    height: 25px;
   }
 }
