@@ -120,3 +120,43 @@
     height: 400px;
   }
 }
+
+@media screen and (max-height: 500px) and (max-width: 700px) {
+  .image-section-image .first-image {
+    height: 250px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .image-section-image .first-image {
+    height: 250px;
+  }
+
+  .grid-image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .image-section-grid {
+    gap: 1rem;
+  }
+  .image-section-header h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .writing-area h1 {
+    margin-top: 7.5rem !important;
+    font-size: 3rem;
+  }
+  .writing-area p {
+    font-size: 2rem;
+  }
+  .waitlist-btn {
+    font-size: 1.6rem;
+  }
+  .writing-area h1 {
+    line-height: 180%;
+  }
+}
