@@ -25,6 +25,7 @@ function Home() {
     window.onload = () => {
       setIsLoading(false);
     };
+    setIsLoading(false);
   }, []);
 
   useEffect(() => {
