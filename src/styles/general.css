@@ -110,6 +110,7 @@ header {
 
 .image-section-image video {
   height: 375px;
+  width: 622px;
   border-radius: 25px;
   border: 20px solid rgba(255, 255, 255, 0.1);
 }

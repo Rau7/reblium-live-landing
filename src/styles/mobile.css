@@ -1,12 +1,39 @@
-@media screen and (max-width: 960px) {
-  .main-section-1 {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 1200px) {
+  .image-section-image video {
+    height: 320px;
+    width: 500px;
+  }
+  .grid-image {
+    height: 225px;
+    width: 225px;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
+  .image-section-image video {
+    height: 300px;
+    width: 450px;
+  }
+
+  .grid-image {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 960px), (max-height: 800px) {
+  .main-section-1 {
+    grid-template-columns: 1fr;
+  }
+  .image-section-image video {
+    height: 300px;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 700px), (max-height: 800px) {
   .writing-area p {
-    padding-right: 0rem;
+    padding-right: 1rem;
   }
   .writing-section {
     padding: 0 0 2rem 2rem;
@@ -32,6 +59,7 @@
   }
   .image-section-image video {
     height: 175px;
+    width: 311px;
     border-radius: 25px;
     border: 10px solid rgba(255, 255, 255, 0.1);
   }
@@ -46,17 +74,31 @@
     font-size: 4rem;
   }
   .writing-area p {
-    font-size: 2.8rem;
-    line-height: 116%;
+    font-size: 2.4rem;
+    line-height: 100%;
   }
   .waitlist-btn {
     font-size: 2.2rem;
+  }
+  .reblium-logo-area img {
+    width: 200px;
+    height: 25px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .image-section-image .first-image {
     height: 400px;
+  }
+  .writing-area p {
+    font-size: 2rem;
+  }
+  .waitlist-btn {
+    font-size: 1.6rem;
+  }
+  .writing-area h1 {
+    font-size: 3.2rem;
+    line-height: 170%;
   }
 }
 
@@ -71,9 +113,10 @@
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.1);
   }
+}
 
-  .reblium-logo-area img {
-    width: 200px;
-    height: 25px;
+@media screen and (max-height: 700px) {
+  .image-section-image .first-image {
+    height: 400px;
   }
 }
