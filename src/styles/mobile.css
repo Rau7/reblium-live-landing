@@ -161,7 +161,7 @@
   }
 }
 
-@media screen and (max-height: 450px) and (max-width: 550px) {
+@media screen and (max-height: 450px) and (max-width: 660px) {
   .image-section-image,
   .image-section-grid {
     margin-top: 1.5rem;
