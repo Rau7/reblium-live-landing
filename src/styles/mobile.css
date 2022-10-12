@@ -88,7 +88,7 @@
 
 @media screen and (max-width: 500px) {
   .image-section-image .first-image {
-    height: 400px;
+    height: 350px;
   }
   .writing-area p {
     font-size: 2rem;
@@ -99,6 +99,29 @@
   .writing-area h1 {
     font-size: 3.2rem;
     line-height: 170%;
+  }
+  .image-section-image {
+    margin-top: 2.5rem;
+  }
+  .image-section-header h3 {
+    font-size: 2.2rem;
+    line-height: 130%;
+  }
+  .waitlist-btn {
+    font-size: 2rem;
+  }
+  .reblium-logo-area img {
+    width: 150px;
+    height: 20px;
+  }
+  header {
+    position: absolute;
+    top: 2rem;
+    left: 6rem;
+  }
+  .writing-area p {
+    font-size: 2rem;
+    line-height: 100%;
   }
 }
 
