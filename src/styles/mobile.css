@@ -131,6 +131,11 @@
 @media screen and (max-height: 700px) {
   .image-section-image .first-image {
     height: 400px;
+    width: 200px;
+  }
+  .image-section,
+  .writing-section {
+    height: 100vh;
   }
 }
 
@@ -213,6 +218,6 @@
 @media screen and (max-width: 400px) {
   .image-section,
   .writing-section {
-    height: 90vh;
+    height: 100vh;
   }
 }
