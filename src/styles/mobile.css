@@ -135,7 +135,7 @@
   }
   .image-section,
   .writing-section {
-    height: 100vh;
+    height: 80vh;
   }
 }
 
@@ -218,6 +218,43 @@
 @media screen and (max-width: 400px) {
   .image-section,
   .writing-section {
-    height: 100vh;
+    height: 100vh !important;
+  }
+}
+
+@media screen and (max-height: 768px) and (max-width: 694px) {
+  .image-section-image,
+  .image-section-grid {
+    margin-top: 1.5rem;
+  }
+  .image-section-header h3 {
+    font-size: 1.8rem;
+    line-height: 130%;
+  }
+
+  .writing-area h1 {
+    font-size: 2.8rem;
+    line-height: 185%;
+  }
+  .waitlist-btn {
+    font-size: 1.4rem;
+    padding: 1.5rem 2rem;
+  }
+  .reblium-logo-area img {
+    width: 150px;
+    height: 20px;
+  }
+  header {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  .writing-area p {
+    font-size: 1.8rem;
+    line-height: 100%;
+  }
+  .image-section-image .first-image {
+    height: 300px;
+    width: 150px;
   }
 }
