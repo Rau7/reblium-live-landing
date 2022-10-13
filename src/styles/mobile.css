@@ -120,6 +120,10 @@
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.1);
   }
+  .image-section,
+  .writing-section {
+    height: 80vh;
+  }
 }
 
 @media screen and (max-height: 700px) {
