@@ -29,6 +29,13 @@
     height: 300px;
     width: 450px;
   }
+  .image-section,
+  .writing-section {
+    height: 70vh;
+  }
+  .image-section-image .first-image {
+    height: 500px;
+  }
 }
 
 @media screen and (max-width: 700px), (max-height: 800px) {
@@ -59,9 +66,9 @@
   }
   .image-section-image video {
     height: 175px;
-    width: 311px;
+    width: 300px;
     border-radius: 25px;
-    border: 10px solid rgba(255, 255, 255, 0.1);
+    border: 7.5px solid rgba(255, 255, 255, 0.1);
   }
   .image-section-header h3 {
     color: white;

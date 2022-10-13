@@ -80,9 +80,7 @@ function Home() {
             <h3>
               Real-time and
               <br />
-              high-fidelity
-              <br />
-              avatar creator streamed to you
+              high-fidelity avatar creator
             </h3>
           </div>
           <div className="image-section-image">
