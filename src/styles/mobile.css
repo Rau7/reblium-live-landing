@@ -132,10 +132,6 @@
   .image-section-image .first-image {
     height: 225px;
   }
-  .image-section,
-  .writing-section {
-    height: 100vh;
-  }
 }
 
 @media screen and (max-height: 500px) {
@@ -169,6 +165,10 @@
   }
   .writing-area h1 {
     line-height: 180%;
+  }
+  .image-section,
+  .writing-section {
+    height: 100vh;
   }
 }
 
