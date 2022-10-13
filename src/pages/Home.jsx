@@ -1,4 +1,4 @@
-import reblogo from "../images/rebliumlogo.webp";
+import reblogo from "../images/REBLIUM.svg";
 import first from "../images/first.webp";
 import second from "../images/second.webp";
 import secondVid from "../images/vid.mp4";
