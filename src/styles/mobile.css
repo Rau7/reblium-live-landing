@@ -208,3 +208,10 @@
     line-height: 100%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .image-section,
+  .writing-section {
+    height: 90vh;
+  }
+}
